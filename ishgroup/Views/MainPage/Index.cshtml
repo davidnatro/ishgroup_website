@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "ISH";
+}
+
+<div class="first">
+    <div class="header">
+        <p class="logo">ISH</p>
+        <div class="burger">
+            <p class="item">О нас</p>
+            <p class="item">ISH | NEON</p>
+            <p class="item">ISH | AD</p>
+            <p class="item">ISH | SM</p>
+            <p class="item">ISH | Design</p>
+        </div>
+    </div>
+    <div class="general">
+        <div class="info">
+            <p class="general1">ISH | GROUP</p>
+            <div class="spisok">
+                Группа компаний
+                <hr>
+                <p>ISH | NEON</p>
+                <p>ISH | AD</p>
+                <p>ISH | SM</p>
+                <p>ISH | Design</p>
+                <button class="svyaz">Свяжитесь с нами</button>
+            </div>
+        </div>
+        <div class="bok">
+            <div class="line"></div>
+            <div>
+                <a href="https://instagram.com/ish.group?igshid=YmMyMTA2M2Y=" target="_blank">
+                    <img class="inst" src="images/87390 1.svg">
+                </a>
+            </div>
+            
+            @{
+                string link = "https://www.tiktok.com/@ishgroup?is_from_webapp=1&sender_device=pc";
+            }
+            
+            <a href=@link>
+                <img class="inst" src="images/TikTok-Logo-PNG-Image 1.svg">
+            </a>
+        </div>
+    </div>
+    <div class="arrow1">
+        <img class="arrow" src="images/Arrow 1.svg">
+    </div>
+</div>
+<div class="second">
+    <div class="second1">
+        <p class="header2">Каталог</p>
+        <div class="rev_slider">
+            <div class="slide">
+                <div class="photo"></div>
+            </div>
+            
+            <div class="slide">
+                <div class="photo2"></div>
+            </div>
+
+            <div class="slide">
+                <div class="photo3"></div>
+            </div>
+            
+            <div class="slide">
+                <div class="photo4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="third">
+    <div class="third1">
+        <p class="header3">Миссия компании</p>
+        <p class="text">
+            «ISH | GROUP» занимает особое положение в отрасли не только благодаря уникальной продукции
+            и привлекательной ценовой политике. Наша компания всегда стремится к совершенству. Мы инвестируем дополнительное время и усилия в обеспечение высочайшего качества нашей продукции,
+            а значит, и в удовлетворенность наших клиентов.
+        </p>
+        <div class="cards2">
+            <div class="controll">
+                <img src="images/IMG_0123.svg">
+                <p class="text2">Высочайший <br> контроль качества</p>
+            </div>
+            <div class="materials">
+                <img src="images/IMG_0122.svg">
+                <p class="text2">Первоклассные<br> материалы</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fourth">
+    <div class="fourth1">
+        <div>
+            <p class="contacts">Контакты</p>
+            <p class="contacts1">
+                ул. Пушкина 41, Алматы 050000, Казахстан
+                <br>
+                shamil.iskander@mail.ru
+                <br>
+                +77079209355
+                <br>
+                Шамиль Искандер
+            </p>
+        </div>
+        <form class="form" method="post" asp-controller="MainPage" asp-action="SendEmailRequest">
+            <div class="form1">
+                <div class="form_group">
+                    <input class="form_input" placeholder=" " name="name">
+                    <label class="form_label">Имя</label>
+                </div>
+
+                <div class="form_group">
+                    <input class="form_input" type="number" placeholder=" " name="phoneNumber">
+                    <label class="form_label">Телефон</label>
+                </div>
+            </div>
+            <div class="form1">
+                <div class="form_group">
+                    <input class="form_input" type="email" placeholder=" " name="email">
+                    <label class="form_label">Эл. почта</label>
+                </div>
+
+                <div class="form_group">
+                    <input class="form_input" placeholder=" " name="address">
+                    <label class="form_label">Адрес</label>
+                </div>
+            </div>
+            <div class="form_group">
+                <input class="form_input1" placeholder=" " name="subject">
+                <label class="form_label">Тема</label>
+            </div>
+            <div class="form_group">
+                <input class="form_input2" placeholder=" " name="text">
+                <label class="form_label">Добавьте сообщение...</label>
+            </div>
+            <button type="submit" class="form_button" onclick="alert('Заявка отправлена!')">Отправить</button>
+        </form>
+    </div>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.383270900011!2d76.95261465126512!3d43.24338858674882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ef07bb60e8d%3A0xcc14a584a509b02!2z0YPQuy4g0J_Rg9GI0LrQuNC90LAgNDEsINCQ0LvQvNCw0YLRiyAwNTAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1650199539901!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<script src="main.js"></script>
+<script src="slick/slick.min.js"></script>
