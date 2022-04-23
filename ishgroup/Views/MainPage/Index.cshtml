@@ -2,144 +2,242 @@
     ViewData["Title"] = "ISH";
 }
 
-<div class="first">
-    <div class="header">
-        <p class="logo">ISH</p>
-        <div class="burger">
-            <p class="item">О нас</p>
-            <p class="item">ISH | NEON</p>
-            <p class="item">ISH | AD</p>
-            <p class="item">ISH | SM</p>
-            <p class="item">ISH | Design</p>
-        </div>
-    </div>
-    <div class="general">
-        <div class="info">
-            <p class="general1">ISH | GROUP</p>
-            <div class="spisok">
-                Группа компаний
-                <hr>
-                <p>ISH | NEON</p>
-                <p>ISH | AD</p>
-                <p>ISH | SM</p>
-                <p>ISH | Design</p>
-                <button class="svyaz">Свяжитесь с нами</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascripts/jquery-3.6.0.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>ISH</title>
+</head>
+<body>
+    <div class="first" id="home">
+        <div class="topnav" id="myTopnav">
+            <div class="lolik">
+                <a href="#home" class="active">ISH</a>
+                <a href="#about">О нас</a>
+                <a href="#neon">ISH | NEON</a>
+                <a href="#adv">ISH | AD</a>
+                <a href="#makets">ISH | SM</a>
+                <a href="#design">ISH | Design</a>
             </div>
-        </div>
-        <div class="bok">
-            <div class="line"></div>
-            <div>
-                <a href="https://instagram.com/ish.group?igshid=YmMyMTA2M2Y=" target="_blank">
-                    <img class="inst" src="images/87390 1.svg">
-                </a>
-            </div>
-            
-            @{
-                string link = "https://www.tiktok.com/@ishgroup?is_from_webapp=1&sender_device=pc";
-            }
-            
-            <a href=@link>
-                <img class="inst" src="images/TikTok-Logo-PNG-Image 1.svg">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"><img src="images/Group 20.svg"></i>
             </a>
         </div>
-    </div>
-    <div class="arrow1">
-        <img class="arrow" src="images/Arrow 1.svg">
-    </div>
-</div>
-<div class="second">
-    <div class="second1">
-        <p class="header2">Каталог</p>
-        <div class="rev_slider">
-            <div class="slide">
-                <div class="photo"></div>
-            </div>
-            
-            <div class="slide">
-                <div class="photo2"></div>
-            </div>
 
-            <div class="slide">
-                <div class="photo3"></div>
+        <div class="general2">
+            <div class="general">
+                <div class="info">
+                    <p class="general1">ISH | GROUP</p>
+                    <div class="spisok">
+                        Группа компаний
+                        <hr>
+                        <p>ISH | NEON</p>
+                        <p>ISH | AD</p>
+                        <p>ISH | SM</p>
+                        <p>ISH | Design</p>
+    <!--                    <button class="svyaz">Свяжитесь с нами</button>-->
+                    </div>
+                </div>
+                <div class="general3">
+                    <p class="general-text">Наша работа заключается в том, чтобы найти наиболее эффективный, удобный и красивый способ решения задачи. Мы существуем так, как нам нравится и как считаем правильным. Мы принципиально не работаем с теми, чьи убеждения противоречат нашим.</p>
+                       <div class="uslugii">
+                            <p class="uslugi">Наши услуги</p>
+                            <div class="rev_slider">
+                                <div class="slide">
+                                    <div class="photo slides"></div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="photo2 slides"></div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="photo3 slides"></div>
+                                </div>
+                                <div class="slide">
+                                    <div class="photo4 slides"></div>
+                                </div>
+                            </div>
+                       </div>
+                </div>
+                <div class="bok">
+                    <div class="line">
+                    </div>
+                    <div>
+                        <a href="https://instagram.com/ish.group?igshid=YmMyMTA2M2Y=" target="_blank">
+                            <img class="inst" src="images/87390 1.svg">
+                        </a>
+                    </div>
+                    @{
+                        string link = @"https://www.tiktok.com/@ishgroup?is_from_webapp=1&sender_device=pc";
+                    }
+                    <a href=@link target="_blank">
+                        <img class="inst" src="images/TikTok-Logo-PNG-Image 1.svg">
+                    </a>
+                </div>
             </div>
-            
-            <div class="slide">
-                <div class="photo4"></div>
-            </div>
+            <button class="svyaz">Свяжитесь с нами</button>
+        </div>
+        <div class="arrow1">
+            <img class="arrow" src="images/Arrow 1.svg">
         </div>
     </div>
-</div>
-<div class="third">
-    <div class="third1">
-        <p class="header3">Миссия компании</p>
-        <p class="text">
-            «ISH | GROUP» занимает особое положение в отрасли не только благодаря уникальной продукции
-            и привлекательной ценовой политике. Наша компания всегда стремится к совершенству. Мы инвестируем дополнительное время и усилия в обеспечение высочайшего качества нашей продукции,
-            а значит, и в удовлетворенность наших клиентов.
-        </p>
-        <div class="cards2">
-            <div class="controll">
-                <img src="images/IMG_0123.svg">
-                <p class="text2">Высочайший <br> контроль качества</p>
+<!--    <div class="second">-->
+<!--        <div class="second1">-->
+<!--            <p class="header2">Каталог</p>-->
+<!--            <div class="rev_slider">-->
+<!--                <div class="slide">-->
+<!--                    <div class="photo"></div>-->
+<!--                </div>-->
+
+<!--                <div class="slide">-->
+<!--                    <div class="photo2"></div>-->
+<!--                </div>-->
+
+<!--                <div class="slide">-->
+<!--                    <div class="photo3"></div>-->
+<!--                </div>-->
+<!--                <div class="slide">-->
+<!--                    <div class="photo4"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="block-neon">
+        <div id="neon"></div>
+        <div class="neon-flex">
+            <h1>ISH | NEON
+                <br>
+                Неоновые вывески
+            </h1>
+            <p class="neon-text">Когда дело доходит до дизайна интерьера, неоновые вывески особенно цепляют внимание. И дело не только в том, что они ярко светят. Они невероятно красочны! Как то сияющее вечернее платье, которое Вы надеваете, когда хотите быть в центре внимания.</p>
+            <div class="neon-photos">
+                <img src="images/9c87f67f65a65e3ed4547a367325e38e 1.png" loading="lazy">
+                <img class="big-photo" src="images/IMG_0132.png" loading="lazy">
+                <img src="images/IMG_0130.png" loading="lazy">
+                <img src="images/IMG_0133.png" loading="lazy">
+                <img src="images/IMG_0131.png" loading="lazy">
             </div>
-            <div class="materials">
-                <img src="images/IMG_0122.svg">
-                <p class="text2">Первоклассные<br> материалы</p>
-            </div>
+            <button class="svyaz1">Свяжитесь с нами</button>
         </div>
     </div>
-</div>
-<div class="fourth">
-    <div class="fourth1">
-        <div>
-            <p class="contacts">Контакты</p>
-            <p class="contacts1">
-                ул. Пушкина 41, Алматы 050000, Казахстан
+    <div id="adv" class="block-neon1">
+        <div class="neon-flex">
+            <h1>
+                ISH | AD
                 <br>
-                shamil.iskander@mail.ru
+                Наружная реклама
+            </h1>
+            <p class="neon-text">Наружная реклама обладает «волшебным свойством» отпечатываться в подсознании людей. За те 0,5 – 3 секунды, что люди держат зрительный контакт с промоушен-щитом, яркий визуальный образ, логотип или название компании остаются у них в памяти как мимолетный отпечаток. Чем больше отпечатков – тем больше человек запоминает конкретную фирму, не отдавая себе в этом отчет.</p>
+            <div class="neon-photos">
+                <img src="images/IMG_4270 1.png" loading="lazy">
+                <img class="big-photo" src="images/IMG_4491 1.png" loading="lazy">
+                <img src="images/IMG_4276 1.png" loading="lazy">
+                <img src="images/IMG_4269 1.png" loading="lazy">
+                <img src="images/IMG_4263 2.png" loading="lazy">
+            </div>
+            <button class="svyaz1 rekl">Свяжитесь с нами</button>
+        </div>
+    </div>
+    <div id="makets" class="block-neon1">
+        <div class="neon-flex">
+            <h1>
                 <br>
-                +77079209355
+                ISH | SM
                 <br>
-                Шамиль Искандер
+                Макеты
+            </h1>
+            <p class="neon-text">Хорошо проработанный и качественно сделанный макет здания всегда привлечет внимание к вашему проекту на выставке, в офисе или мероприятии.
+                <br>
+                <br>
+                Макеты жилых комплексов   /   Макеты карьеров   /   Домов   /   Заводов   /    Производств   /   Горнодобывающих предприятий   /   Диорамы   /   Бутафория
             </p>
+            <div class="neon-photos">
+                <img src="images/IMG_0135.png" loading="lazy">
+                <img class="big-photo" src="images/IMG_4282 1.png" loading="lazy">
+                <img src="images/IMG_0137.png" loading="lazy">
+                <img src="images/IMG_0136.png" loading="lazy">
+                <img src="images/IMG_0138.png" loading="lazy">
+            </div>
+            <button class="svyaz1 rekl">Свяжитесь с нами</button>
         </div>
-        <form class="form" method="post" asp-controller="MainPage" asp-action="SendEmailRequest">
-            <div class="form1">
-                <div class="form_group">
-                    <input class="form_input" placeholder=" " name="name">
-                    <label class="form_label">Имя</label>
-                </div>
-
-                <div class="form_group">
-                    <input class="form_input" type="number" placeholder=" " name="phoneNumber">
-                    <label class="form_label">Телефон</label>
-                </div>
-            </div>
-            <div class="form1">
-                <div class="form_group">
-                    <input class="form_input" type="email" placeholder=" " name="email">
-                    <label class="form_label">Эл. почта</label>
-                </div>
-
-                <div class="form_group">
-                    <input class="form_input" placeholder=" " name="address">
-                    <label class="form_label">Адрес</label>
-                </div>
-            </div>
-            <div class="form_group">
-                <input class="form_input1" placeholder=" " name="subject">
-                <label class="form_label">Тема</label>
-            </div>
-            <div class="form_group">
-                <input class="form_input2" placeholder=" " name="text">
-                <label class="form_label">Добавьте сообщение...</label>
-            </div>
-            <button type="submit" class="form_button" onclick="alert('Заявка отправлена!')">Отправить</button>
-        </form>
     </div>
-    <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.383270900011!2d76.95261465126512!3d43.24338858674882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ef07bb60e8d%3A0xcc14a584a509b02!2z0YPQuy4g0J_Rg9GI0LrQuNC90LAgNDEsINCQ0LvQvNCw0YLRiyAwNTAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1650199539901!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="third">
+        <div class="third1">
+<!--            <p class="header3">Миссия компании</p>-->
+<!--            <p class="text">«ISH | GROUP» занимает особое положение в отрасли не только благодаря уникальной продукции-->
+<!--                и привлекательной ценовой политике. Наша компания всегда стремится к совершенству. Мы инвестируем дополнительное время и усилия в обеспечение высочайшего качества нашей продукции,-->
+<!--                а значит, и в удовлетворенность наших клиентов.</p>-->
+            <div class="cards2">
+                <div class="controll">
+                    <img class="cards2Photo" src="images/IMG_0123.svg">
+                    <p class="text2">Высочайший <br> контроль качества</p>
+                </div>
+                <div class="materials">
+                    <img class="cards2Photo" src="images/IMG_0122.svg">
+                    <p class="text2">Первоклассные<br> материалы</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<script src="main.js"></script>
-<script src="slick/slick.min.js"></script>
+    <div class="fourth">
+        <div class="fourth1">
+            <div>
+                <p class="contacts">Контакты</p>
+                <p class="contacts1">
+                    ул. Пушкина 41, Алматы 050000, Казахстан
+                    <br>
+                    shamil.iskander@mail.ru
+                    <br>
+                    +77079209355
+                </p>
+            </div>
+            <form class="form" method="post" asp-controller="MainPage" asp-action="SendEmailRequest">
+                <div class="form1">
+                    <div class="form_group">
+                        <input class="form_input" placeholder=" " name="name">
+                        <label class="form_label">Имя</label>
+                    </div>
+
+                    <div class="form_group">
+                        <input class="form_input" type="number" placeholder=" " name="phoneNumber">
+                        <label class="form_label">Телефон</label>
+                    </div>
+                </div>
+                @* <div class="form1"> *@
+                @*     <div class="form_group"> *@
+                @*         <input class="form_input" type="email" placeholder=" "> *@
+                @*         <label class="form_label">Эл. почта</label> *@
+                @*     </div> *@
+                @* *@
+                @*     <div class="form_group"> *@
+                @*         <input class="form_input" placeholder=" "> *@
+                @*         <label class="form_label">Город</label> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div class="form_group"> *@
+                @*     <input class="form_input1" placeholder=" "> *@
+                @*     <label class="form_label">Тема</label> *@
+                @* </div> *@
+                @* <div class="form_group"> *@
+                @*     <input class="form_input2" placeholder=" "> *@
+                @*     <label class="form_label">Добавьте сообщение...</label> *@
+                @* </div> *@
+                <button type="submit" class="form_button">Отправить</button>
+            </form>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.383270900011!2d76.95261465126512!3d43.24338858674882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ef07bb60e8d%3A0xcc14a584a509b02!2z0YPQuy4g0J_Rg9GI0LrQuNC90LAgNDEsINCQ0LvQvNCw0YLRiyAwNTAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1650199539901!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="slick/slick.min.js"></script>
+</body>
+</html>

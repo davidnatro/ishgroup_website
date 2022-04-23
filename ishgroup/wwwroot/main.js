@@ -7,8 +7,22 @@ $(function (){
         autoplay : true,
         autoplaySpeed: 2000,
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 750,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    autoplay : true,
+                    autoplaySpeed: 2000,
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            ]
     })
 })
 
@@ -22,4 +36,13 @@ $button.addEventListener('click', e => {
         behavior: 'smooth',
     });
 });
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 

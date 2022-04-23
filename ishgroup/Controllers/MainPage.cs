@@ -38,8 +38,7 @@ namespace ishgroup.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendEmailRequest(string name, string phoneNumber, 
-            string email, string address, string subject)
+        public IActionResult SendEmailRequest(string name, string phoneNumber)
         {
             _requestCount += _requestCount == int.MaxValue ? -int.MaxValue : 1;
             
@@ -47,18 +46,14 @@ namespace ishgroup.Controllers
             
             name = string.IsNullOrEmpty(name) ? "-" : name;
             phoneNumber = string.IsNullOrEmpty(phoneNumber) ? "-" : phoneNumber;
-            email = string.IsNullOrEmpty(email) ? "-" : email;
-            address = string.IsNullOrEmpty(address) ? "-" : address;
-            subject = string.IsNullOrEmpty(subject) ? "-" : subject;
-            
+
             #endregion
 
             Email emailSender = new Email(_emailSender);
             emailSender.Password = _password;
             
             emailSender.Subject = $"Заявка №{_requestCount}";
-            emailSender.Text = $"Имя: {name}\nНомер телефона: {phoneNumber}\nПочта: {email}" +
-                               $"\nАдрес: {address}\nТема обращения: {subject}\n";
+            emailSender.Text = $"Имя: {name}\nНомер телефона: {phoneNumber}\n";
 
             emailSender.SendEmail("Iskander",_emailReceiver);
 

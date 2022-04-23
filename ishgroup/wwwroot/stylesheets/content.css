@@ -16,7 +16,49 @@ hr {
     background-color: white;
     margin-top: 20px;
 }
+.active {
+    color: white;
+    font-weight: 400;
+    font-size: 40px !important;
+    /*line-height: 49px;*/
+}
+.topnav {
+    width: 100vw;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
 
+.lolik {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+
+.topnav .icon {
+    display: none;
+}
 .logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -44,7 +86,8 @@ hr {
     display: flex;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    margin-top: 250px;
+    margin-top: 100px;
+    justify-content: space-around;
 }
 .info {
     margin: auto;
@@ -53,6 +96,73 @@ hr {
     font-weight: 400;
     font-size: 64px;
     line-height: 78px;
+}
+.general3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+}
+.general-text {
+    width: 60vw;
+    font-size: 24px;
+    padding-right: 10px;
+    line-height: 25px;
+}
+.uslugi {
+    font-size: 40px;
+}
+
+.slides {
+    /*width: 233.47px;*/
+    /*height: 230.02px;*/
+    width: 15vw;
+    height: 15vw;
+}
+.photo {
+    background-image: url("../images/Group 4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo2 {
+    background-image: url("../images/Group 5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo3 {
+    background-image: url("../images/Group 6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo4 {
+    background-image: url("../images/Group 5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rev_slider {
+    margin-top: 20px;
+}
+.slick-dotted.slick-slider {
+    width: 50vw;
+}
+.slick-slide {
+    margin: auto;
+}
+.slick-list {
+    margin: auto;
+}
+.slick-dots li.slick-active button:before {
+    color: black!important;
+}
+.slick-dots li button:before {
+    padding-top: 30px;
+    font-size: 10px !important;
+    color: black !important;
 }
 .spisok {
     font-weight: 400;
@@ -64,12 +174,16 @@ hr {
 .spisok p {
     margin-top: 10px;
 }
-
+.general2 {
+    display: flex;
+    flex-direction: column;
+}
 .svyaz {
-    margin: 65px;
-    background-color: black;
-    border-color: black;
-    /*border-radius: 23px;*/
+    margin: auto;
+    margin-top: 70px;
+    background-color: #6100FF;
+    border-color: #6100FF;
+    border-radius: 10px;
     color: white;
     width: 269px;
     height: 69px;
@@ -86,6 +200,7 @@ hr {
 }
 
 .bok {
+    margin: auto;
     margin-right: 15px;
     display: flex;
     flex-direction: column;
@@ -118,15 +233,18 @@ hr {
     width: 100vw;
     height: 1024px;
     background-color: black;
+    display: flex;
 }
 .second1 {
+    margin: auto;
     display: flex;
+    width: 95vw;
+    margin-top: 30px;
     flex-direction: column;
 }
 .header2 {
     color: white;
     margin: auto;
-    margin-top: 74px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -135,17 +253,14 @@ hr {
 }
 
 .cards {
-    margin-top: 97px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
 }
 
-.cardsImg {
-}
-
 .third {
     width: 100vw;
-    height: 1024px;
+    height: 700px;
 }
 .third1 {
     margin: auto;
@@ -173,6 +288,7 @@ hr {
 }
 
 .cards2 {
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
     padding-top: 55px;
@@ -194,7 +310,7 @@ hr {
 
 .fourth {
     width: 100vw;
-    height: 1024px;
+    height: 720px;
 }
 .fourth1 {
     margin: auto;
@@ -278,10 +394,11 @@ hr {
     display: flex;
 }
 .form_button {
+    border-radius: 10px;
     width: 100%;
     height: 60px;
-    background-color: black;
-    border-color: black;
+    background-color: #6100FF;
+    border-color: #6100FF;
     color: white;
     font-family: 'Montserrat';
     font-style: normal;
@@ -317,60 +434,93 @@ hr {
     margin-top: 60px;
 }
 
-.photo {
-    background-image: url("../images/Group 4.svg");
-    width: 420.98px;
-    height: 563.2px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.photo2 {
-    background-image: url("../images/Group 5.svg");
-    width: 420.98px;
-    height: 563.2px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.photo3 {
-    background-image: url("../images/Group 6.svg");
-    width: 420.98px;
-    height: 563.2px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.photo4 {
-    background-image: url("../images/Group 5.svg");
-    width: 420.98px;
-    height: 563.2px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.rev_slider {
-    margin-top: 97px;
-    display: flex;
-}
-.slick-slide {
-    margin: auto;
-}
-.slick-list {
-    width: 100%;
-    margin: auto;
-}
-.slick-dots li.slick-active button:before {
-    color: white !important;
-}
-.slick-dots li button:before {
-    padding-top: 30px;
-    font-size: 10px !important;
-    color: white !important;
-}
-
 
 
 /**/
+h1 {
+    font-size: 40px;
+    line-height: 42px;
+}
+.block-neon {
+    width: 100vw;
+    height: 1024px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+}
+.neon-flex {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+}
+.neon-text {
+    font-size: 24px;
+    margin-top: 31px;
+    line-height: 28px;
+}
+.neon-photos {
+    margin-top: 20px;
+    width: 90vw;
+    height: 585px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.big-photo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.neon-photos img {
+    margin: auto;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.svyaz1 {
+    margin: auto;
+    margin-top: 30px;
+    /*background-color: white;*/
+    /*border-color: white;*/
+    background-color: #6100FF;
+    border-color: #6100FF;
+    border-radius: 10px;
+    color: white;
+    width: 269px;
+    height: 69px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+.svyaz1:hover {
+    background-color: black;
+    color: white;
+}
+
+.block-neon1 {
+    padding-top: 20px;
+    width: 100vw;
+    height: 1024px;
+    font-family: 'Montserrat';
+}
+
+.rekl {
+    background-color: #6100FF !important;
+    border-color: #6100FF !important;
+    color: white !important;
+}
+.rekl:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+
 

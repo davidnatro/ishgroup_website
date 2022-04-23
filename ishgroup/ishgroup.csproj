@@ -2,10 +2,32 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="MailKit" Version="3.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\images\87390 1.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Arrow 1.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\burger.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Group 4.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Group 5.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Group 6.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\IMG_0122.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\IMG_0123.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\TikTok-Logo-PNG-Image 1.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\.DS_Store" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\ajax-loader.gif" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\fonts\slick.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\fonts\slick.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\fonts\slick.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\fonts\slick.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\slick-theme.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\slick.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\slick\slick.min.js" />
     </ItemGroup>
 
 </Project>
